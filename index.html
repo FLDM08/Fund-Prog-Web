@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Pessoal</title>
+
+    <style>
+        body{
+            background-color:#525F66;
+            padding:75px;
+            text-align:center;
+            font-family: sans-serif;
+        }
+
+        /*formatação do título da página*/
+        h1{
+            color:#9e8d8d;
+            font-weight:100px;
+            font-size: 30px;
+            text-transform:uppercase;
+        }
+
+        /*formatação do menu*/
+        .menu{
+            color:#516674;
+            background-color:black;
+            padding:10px 20px;
+            font-size:20px;
+            text-decoration:none;
+            letter-spacing:2px;
+            text-transform:uppercase;
+        }
+
+        /*mudanças ativadas pelo movimento do mouse*/
+        .menu:hover{
+            border:none;
+            color:black;
+            background-color:white;
+            padding:10px 20px;
+        }
+
+        /*alinhamento e fonte dos parágrafos*/
+        p {
+            text-align: left;
+            font-family: 'Courier New';
+        }
+
+        /*estabelecendo o máximo para que a imagem possa ser reajustada*/
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /*centralizando a imagem*/
+        .centro {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+            height: auto;
+        }
+
+        /*formatação de links já visitados*/
+        .endereco:visited {
+            color: black;
+        }
+
+        /*formatação de links não visitados*/
+        .endereco:link {
+            color: black;
+        }
+
+        /*alinhamento, posicionamento e cor do rodapé*/
+        footer {
+            color: #9e8d8d;
+            position:relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        /*melhor visualização do menu em caso de redução no tamanho da janela*/
+        @media only screen and (max-width: 870px) {
+            .menu{
+                display: grid;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+        }  
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="menu">Sobre mim</a>
+    <a href="formacao.html" class="menu">Formação</a>
+    <a href="portifolio.html" class="menu">Portifólio</a>
+    <a href="contato.html" class="menu">Contato</a>
+
+    <h1>Sobre mim</h1>
+
+    <h2>Introdução</h2>
+
+        <p>Meu nome é Mateus, tenho 28 anos. Ainda novo, fui introduzido à linguagem de programação C++ sob a justificativa de que ajudaria a desenvolver o pensamento lógico. Surpreendentemente, para mim, foi uma experiência extremamente positiva e memorável, resultando no surgimento de um interesse por programação e por desenvolvimento web. Devido aos caminhos da vida, só agora pude dar atenção a esse interesse. Não tem sido uma jornada fácil, mas tem sido satisfatória.</p>
+            
+        <div class="centro">
+            <img src="mohammad-rahmani-oXlXu2qukGE-unsplash.jpg" alt="Foto do monitor de um computador onde está aberto um programa com um código em html">
+            <small style="position: relative; top: 0; font-size: 11px;">Foto de <a class="endereco" href="https://unsplash.com/pt-br/@afgprogrammer" target="_blank">Mohammad Rahmani</a> na <a class="endereco" href="https://unsplash.com/photos/oXlXu2qukGE" target="_blank">Unplash</a></small>
+        </div>
+
+        <p>Não sou uma pessoa muito sociável, então passo a maior parte do meu tempo livre jogando <strong>Civilization</strong>, embora eu deva admitir que, mesmo tendo jogado por anos e tendo passado por várias versões do jogo, não sou lá um grande jogador. Mas ainda assim, é um bom e divertido passatempo, ou algum jogo de gerenciamento, como <strong>Front Office Football</strong>, <strong>Football Manager</strong>, <strong>World of Mixed Martial Arts</strong>, que são basicamente planilhas animadas.</p>
+    
+    <footer>
+        <h6>Desenvolvido para fins educacionais</h6>
+    </footer>
+</body>
+</html>

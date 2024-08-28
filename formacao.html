@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Pessoal</title>
+
+    <style>
+        body{
+            background-color:#525F66;
+            padding:75px;
+            text-align:center;
+            font-family: sans-serif;
+        }
+
+        /*formatação do título da página*/
+        h1{
+            color:#9e8d8d;
+            font-weight:100px;
+            font-size: 30px;
+            text-transform:uppercase;
+        }
+        /*formatação do menu*/
+        .menu{
+            color:#516674;
+            background-color:black;
+            padding:10px 20px;
+            font-size:20px;
+            text-decoration:none;
+            letter-spacing:2px;
+            text-transform:uppercase;
+        }
+
+        /*mudanças ativadas pelo movimento do mouse*/
+        .menu:hover{
+            border:none;
+            color:black;
+            background-color:white;
+            padding:10px 20px;
+        }
+
+        /*estabelecendo o máximo para que a imagem possa ser reajustada*/
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /*centralizando a imagem*/
+        .centro {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+            height: auto;
+        }
+
+        /*cor dos links já visitados*/
+        .endereco:visited {
+            color: black;
+        }
+
+        /*cor dos links não visitados*/
+        .endereco:link {
+            color: black;
+        }
+
+        /*alinhamento, estilo e fonte da lista*/
+        ul {
+            text-align: left;
+            list-style-type: circle;
+            font-family: 'Courier New';
+        }
+
+        /*alinhamento, posicionamento e cor do rodapé*/
+        footer {
+            color: #9e8d8d;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        /*melhor visualização do menu em caso de redução no tamanho da janela*/
+        @media only screen and (max-width: 870px) {
+            .menu{
+                display: grid;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+        }        
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="menu">Sobre mim</a>
+    <a href="formacao.html" class="menu">Formação</a>
+    <a href="portifolio.html" class="menu">Portifólio</a>
+    <a href="contato.html" class="menu">Contato</a>
+
+    <h1>Formação</h1>
+    
+    <h2>Formação Acadêmica</h2>
+
+        <ul>
+            <li>Ensino Médio - ETEC Prof. Armando Bayeux da Silva - Concluído em 2013</li>
+            <li>Curso Técnico, Mecânico de Usinagem - SENAI - Concluído em 2012 </li>
+            <li>Tecnólogo em Automação Industrial - IFSP (Campus Piracicaba) - Concluído em 2018</li>
+            <li>Cursando Tecnologia em Análise e Desenvolvimento de Sistemas - Uninter - Previsão de conclusão em 2026</li>
+        </ul>
+            
+        <div class="centro">
+            <img src="rut-miit-RpxgkJRqg5I-unsplash.jpg" alt="Foto de uma pessoa segurando um capelo preto.">
+            <small style="position: relative; top: 0; font-size: 11px;">Foto de <a class="endereco" href="https://unsplash.com/pt-br/@rutmiit" target="_blank">RUT MIIT</a> na <a class="endereco" href="https://unsplash.com/photos/RpxgkJRqg5I" target="_blank">Unplash</a></small>
+        </div>
+    
+    <footer>
+        <h6>Desenvolvido para fins educacionais</h6>
+    </footer>
+</body>
+</html>

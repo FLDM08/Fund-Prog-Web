@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Pessoal</title>
+
+    <style>
+        body{
+            background-color:#525F66;
+            padding:75px;
+            text-align:center;
+            font-family: sans-serif;
+        }
+
+        /*formatação do título da página*/
+        h1{
+            color:#9e8d8d;
+            font-weight:100px;
+            font-size: 30px;
+            text-transform:uppercase;
+        }
+
+        /*formatação do menu*/
+        .menu{
+            color:#516674;
+            background-color:black;
+            padding:10px 20px;
+            font-size:20px;
+            text-decoration:none;
+            letter-spacing:2px;
+            text-transform:uppercase;
+        }
+
+        /*mudanças ativadas pelo movimento do mouse*/
+        .menu:hover{
+            border:none;
+            color:black;
+            background-color: white;
+            padding:10px 20px;
+        }
+
+    
+        /*alinhamento e fonte dos parágrafos*/
+        p {
+            text-align: left;
+            font-family: 'Courier New';
+        }
+
+        /*estabelecendo o máximo para que a imagem possa ser reajustada*/
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /*centralizando a imagem*/
+        .centro {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            height: auto;
+        }
+
+        /*cor dos links já visitados*/
+        .endereco:visited {
+            color: black;
+        }
+
+        /*cor dos links não visitados*/
+        .endereco:link {
+            color: black;
+        }
+
+        /*alinhamento, posicionamento e cor do rodapé*/
+        footer {
+            color: #9e8d8d;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    
+        /*melhor visualização do menu em caso de redução no tamanho da janela*/
+        @media only screen and (max-width: 870px) {
+            .menu{
+                display: grid;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+        }  
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="menu">Sobre mim</a>
+    <a href="formacao.html" class="menu">Formação</a>
+    <a href="portifolio.html" class="menu">Portifólio</a>
+    <a href="contato.html" class="menu">Contato</a>
+
+    <h1>Portifólio</h1>
+    
+    <h2>Portifólio</h2>
+            
+        <div class="centro">
+            <a href="https://fldm08.github.io/redesigned-octo-dollop/" target="_blank">
+                <img src="Screenshot 2024-08-28 at 18-04-00 Vincent Van Gogh.png" alt="Print da página inicial de um site sobre Vincent Van Gogh">
+            </a>
+
+            <small style="position: relative; top: 0; font-size: 11px;"><a class="endereco" href="https://fldm08.github.io/redesigned-octo-dollop/" target="_blank">Site</a> desenvolvido durante a disciplina "Fundamentos da Programação Web"</small>
+        </div>
+    <footer>
+        <h6>Desenvolvido para fins educacionais</h6>
+    </footer>
+</body>
+</html>
